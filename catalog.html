@@ -81,10 +81,31 @@
             <option>сначала дорогие</option>
             <option>по жирности</option>
           </select>
+        </fieldset>
+        <fieldset>
           <label for="price"> Цена: 100 ₽ – 500 ₽</label>
-          <input type="range" id="price" name="price" min="100" max="500" step="5"> 
-          <label for="fat">Жирность</label>
-          <input type="radio" name="fat" value="0%" value="до 10%"value="до 30%" value="выше 30%">
+          <input type="range" id="price" name="price" min="100" max="500" step="5">
+        </fieldset>
+        <fieldset>
+          <legend>Жирность<legend>
+              <ul>
+                <li>
+                  <input type="radio" name="fat" value="0%" id="fat-0">
+                  <label for="fat-0">0%</label>
+                </li>
+                <li>
+                  <input type="radio" name="fat" value="10%" id="fat-10" checked>
+                  <label for="fat-10">до 10%</label>
+                </li>
+                <li>
+                  <input type="radio" name="fat" value="30%" id="fat-30">
+                  <label for="fat-30">до 30%</label>
+                </li>
+                <li>
+                  <input type="radio" name="fat" value="30%" id="fat-many30">
+                  <label for="fat-many30">выше 30%</label>
+                </li>
+              </ul>
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
@@ -94,8 +115,8 @@
               <label for="chocolate">шоколадные</label>
             </li>
             <li>
-              <input type="checkbox" name="sugar powders" id="sugar powders" checked>
-              <label for="sugar powders">сахарные присыпки</label>
+              <input type="checkbox" name="sugar-powders" id="sugar-powders" checked>
+              <label for="sugar-powders">сахарные присыпки</label>
             </li>
             <li>
               <input type="checkbox" name="fruits" id="fruits">
@@ -109,7 +130,7 @@
               <input type="checkbox" name="jams" id="jams">
               <label for="jams">джемы</label>
             </li>
-          </ul> 
+          </ul>
         </fieldset>
         <button type="submit">Применить</button>
       </form>
@@ -256,7 +277,7 @@
 
     </section>
   </main>
-  
+
   <footer>
     <section>
       <h2>Давайте дружить!</h2>
