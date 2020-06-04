@@ -1,7 +1,4 @@
+body {
 .main-menu .sub-menu {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    list-style: none;
     background-color: #fcf8e3;
 }
