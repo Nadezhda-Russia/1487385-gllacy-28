@@ -44,14 +44,26 @@
       <a href="#">Вход</a>
       <a href="#">Пусто</a>
       <section>
-        <p>Крем-брюле</p>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <!-- <label for="search">Поиск</label>-->
+        <Input type="text" id="search" name="search" placeholder="Крем-брюле">
+        </form>
+        <!-- ВОПРОС - ТУТ НЕТ КНОПКИ?! как будет осуществляться поиск -->
       </section>
       <section>
-        <p>email@example.com</p>
-        <p>*****</p>
-        <a href="#">Войти</a>
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <p>
+           <!--<label for="login-login">Логин</label>-->
+          <input id="login-login" type="email" name="login" placeholder="email@example.com">
+        </p>
+        <p>
+           <!--<label for="login-password">Пароль</label>-->
+          <input id="login-password" type="password" name="password" placeholder="••••••••">
+        </p>
         <a href="#">Забыли пароль?</a>
         <a href="#">Новая регистрация</a>
+       </form>
+        <button type="submit">Войти</button>
       </section>
       <section>
         <!-- Здесь будет форма корзины -->
@@ -214,12 +226,30 @@
       <a href="https://htmlacademy.ru">Сделано в HTML Academy © 2019</a>
     </p>
   </footer>
-  <section>
-    <h2>форма обратной связи</h2>
+    <section>
+      <h2>Мы обязательно вам ответим!</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <!--<label for="name">Имя Фамилия</label>!-->
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+      </p>
+      <p>
+        <!--<label for="adress.email">адрес почты</label>-->
+        <input type="email" id="adress.email" name="adress.email" placeholder="email@example.com" required>
+      </p>
+      <p>
+        <!--<label for="request">Ваше обращение</label>-->
+        <textarea id="request" name="comment" rows="11" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="button">Отправить</button>
+      </form>
+    <button type="button">Закрыть</button>
+    </section> 
+  <section> 
     <p>Введите пожалуйста свои контактные данные</p>
     <!-- Здесь будет форма обратной связи -->
     <button type="button">Закрыть</button>
-  </section>
+ </section>
 </body>
 
 </html>
