@@ -41,41 +41,50 @@
       </ul>
     </nav>
     <div>
-      <a href="catalog.html">поиск</a>
-      <section>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
-          <span class="vissualy-hidden"><label for="search">Поиск</label></span>
-          <button class="submit" type="button">
+      <a href="catalog.html">
+        <span class="vissualy-hidden">поиск</span>
+        <!-- <img src="" width="" height="" alt=""> -->
+      </a>
+        <form action="https://echo.htmlacademy.ru/courses" method="GET">
+            <label for="search" class="vissualy-hidden">Поиск</label>
             <input type="text" id="search" name="search" placeholder="Крем-брюле">
-          </button>
         </form>
-      </section>
     </div>
     <div>
-      <a href="#">Вход</a>
-      <section>
+      <a href="#">Вход
+        <!-- <img src="" width="" height="" alt=""> -->
+      </a>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <p>
-            <span class="vissualy-hidden"><label for="login-login">Логин</label></span>
+            <label for="login-login" class="vissualy-hidden">Логин</label>
             <input id="login-login" type="email" name="login" placeholder="email@example.com">
           </p>
           <p>
-            <span class="vissualy-hidden"><label for="login-password">Пароль</label></span>
+            <label for="login-password" lass="vissualy-hidden"></label>>Пароль</label>
             <input id="login-password" type="password" name="password" placeholder="••••••••">
           </p>
           <a href="#">Забыли пароль?</a>
           <a href="#">Новая регистрация</a>
           <button type="submit">Войти</button>
         </form>
-
-      </section>
     </div>
     <div>
-      <a href="#">Пусто</a>
+      <a href="#">Пусто
+       <!-- <img src="" width="" height="" alt=""> --> 
+      </a>
       <section>
         <!-- Здесь будет форма корзины -->
         <form action="https://echo.htmlacademy.ru/courses" method="post">
           <table>
+            <thead class="vissualy-hidden"> 
+              <tr>
+                <th>Действие</th>
+                <th>Изображение</th>
+                <th>Наименование</th>
+                <th>Обьем</th>
+                <th>Стоимость</th>
+               </tr>
+            </thead>
             <tbody>
               <tr>
                 <td>
@@ -85,18 +94,13 @@
                   <img src="img/hit-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
                 </td>
                 <td>
-                  <p>
                     Пломбир с апельсиновым джемом
-                  </p>
                 </td>
                 <td>
-                  <p>
                     1,5 кг х <span>200 руб.</span>
-                  </p>
                 </td>
                 <td>
-                  <p>300 руб.</p>
-                </td>
+                  300 руб.
                 </td>
               </tr>
               <tr>
@@ -108,17 +112,13 @@
                     alt="Клубничный пломбир с присыпкой из белого шоколада">
                 </td>
                 <td>
-                  <p>
                     Клубничный пломбир с присыпкой из белого шоколада
-                  </p>
                 </td>
                 <td>
-                  <p>
                     1,5 кг х <span>300 руб.</span>
-                  </p>
                 </td>
                 <td>
-                  <p>450 руб.</p>
+                  450 руб.
                 </td>
               </tr>
             </tbody>
@@ -140,13 +140,13 @@
     <h1>Магазин Глейси</h1>
     <ul>
       <li>
-        <span class="vissualy-hidden"><h2>Крем-брюле и пломбир с малиновым джемом</h2></span>
+        <h2 class="vissualy-hidden">Крем-брюле и пломбир с малиновым джемом</h2>
         <a href="#">давайте оба</a>
         <img src="img/group1.png" width="647" height="584">
         <img src="img/illumination.png" width="716" height="716">
       </li>
       <li>
-        <span class="vissualy-hidden"><h2>Шоколадный пломбир и лимонный сорбе </h2></span>
+        <h2 class="vissualy-hidden">Шоколадный пломбир и лимонный сорбе </h2>
         <a href="#">давайте оба</a>
         <img src="img/group2.png" width="647" height="584">
         <img src="img/illumination.png" width="716" height="716">
