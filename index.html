@@ -7,41 +7,44 @@
   <meta name="keywords" content="магазин мороженного">
   <meta name="description" content="онлайн и офлайн магазин по продаже мороженного собственного производства">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
+    <nav class="main-navigation">
       <a href="#">
         <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина">
       </a>
-      <ul class="main-menu">
-        <li>
-          <a href="#">каталог</a>
-          <ul class="sub-menu">
-            <li>
+      <ul class="site-navigation">
+        <li class="site-navigation__item">
+          <a href="#">Каталог</a>
+          <ul class="sub-navigation">
+            <li class="site-navigation__item">
               <a href="#">Новинки</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="catalog.html">Сливочное</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#"> Щербеты</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">Фруктовый лед</a>
             </li>
-            <li>
+            <li class="site-navigation__item">
               <a href="#">>Мелорин</a>
             </li>
           </ul>
         </li>
-        <li><a href="#">доставка и оплата</a></li>
-        <li><a href="#">о компании</a></li>
+        <li class="site-navigation__item"><a href="#">Доставка и оплата</a></li>
+        <li class="site-navigation__item"><a href="#">О компании</a></li>
       </ul>
     </nav>
     <div>
-      <a href="catalog.html">
+      <a class="user-navigation" href="catalog.html">
         <span class="vissualy-hidden">поиск</span>
         <!-- <img src="" width="" height="" alt=""> -->
       </a>
@@ -51,7 +54,7 @@
         </form>
     </div>
     <div>
-      <a href="#">Вход
+      <a class="user-navigation" href="#">Вход
         <!-- <img src="" width="" height="" alt=""> -->
       </a>
         <form action="https://echo.htmlacademy.ru/courses" method="post">
@@ -69,7 +72,7 @@
         </form>
     </div>
     <div>
-      <a href="#">Пусто
+      <a class="user-navigation" href="#">Пусто
        <!-- <img src="" width="" height="" alt=""> --> 
       </a>
       <section>
@@ -144,22 +147,22 @@
   </header>
   <main>
     <h1>Магазин Глейси</h1>
-    <ul>
-      <li>
+    <ul class="features-list">
+      <li class="feature-item">
         <h2 class="vissualy-hidden">Крем-брюле и пломбир с малиновым джемом</h2>
-        <a href="#">давайте оба</a>
+        <a href="#">Давайте оба!</a>
         <img src="img/group1.png" width="647" height="584" alt="два мороженных в рожке">
         <img src="img/illumination.png" width="716" height="716" alt="подсветка">
       </li>
-      <li>
+      <li class="feature-item">
         <h2 class="vissualy-hidden">Шоколадный пломбир и лимонный сорбе </h2>
-        <a href="#">давайте оба</a>
+        <a href="#">Давайте оба!</a>
         <img src="img/group2.png" width="647" height="584" alt="два мороженных в рожке">
         <img src="img/illumination.png" width="716" height="716" alt="подсветка">
       </li>
-      <li>
+      <li class="feature-item">
         <h2 class="vissualy-hidden">Пломбир с помадкой и клубничный щербет</h2>
-        <a href="#">давайте оба</a>
+        <a href="#">Давайте оба!</a>
         <img src="img/group3.png" width="647" height="584" alt="два мороженных в рожке">
         <img src="img/illumination.png" width="716" height="716" alt="подсветка">
       </li>
@@ -180,7 +183,7 @@
       </div>
     </section>
     <section>
-      <ul>
+      <ul class="features-list">
         <li>
           <a href="#"> Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           <p>
@@ -220,9 +223,9 @@
       </ul>
     </section>
 
-    <article>
+    <article class="description">
       <p>Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
-      <ul>
+      <ul class="description-features">
         <li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования
           и проверенных временем технологий.</li>
         <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
@@ -234,16 +237,16 @@
       </ul>
     </article>
 
-    <div>
+    <div class="strawberry">
       <h2>Новое в нашем блоге</h2>
-      <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+      <a class="strawberry__item" href="#">10 способов сервировки фруктовых щербетов к столу</a>
       <img src="img/strawberry.jpg" width="560px" height="220px" alt="клубничный десерт">
     </div>
 
-
+ 
     <section>
       <h2>Обратная связь</h2>
-      <p>
+      <p class="feedback">
         Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
         Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
       </p>

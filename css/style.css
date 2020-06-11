@@ -1,4 +1,136 @@
-.main-menu .sub-menu {
-    background-color: #fcf8e3;
-    display: none
+/* Variables */
+
+:root {
+    --basic-white: #FFFFFF;
+    --basic-extra-dark: #323232;
+    --basic-dark: #5A5A5A;
+    --absolute-color: #849D8F;
+    --absolute-color-a:#D07058;
+}
+  /* Global */
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size:16px;
+    line-height:22px;
+    color: var(--basic-white);
+    background-color: #849D8F;
+    background-image: url("img/background-image.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--absolute-color);
+}
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation .sub-navigation {
+  background-color: #fcf8e3;
+  display: none;
+}
+
+.site-navigation__item > a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--absolute-color);
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--absolute-color);
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-white);
+}
+
+.site-navigation__item a:hover,
+.site-navigation__item a:focus{
+  background-color:var(--absolute-color-a);
+}
+
+.user-navigation a:hover
+.user-navigation a:focus{
+  background-color:var(--basic-white);
+}
+/* Features */
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h2 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.feature-item a{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: var(--basic-white);
+}
+
+/* Index description */
+.description{
+  color: var(--basic-extra-dark);
+  background-color: var(--absolute-color);
+  background-image: url("img/pattern.png");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+ }
+ .description-features{
+  list-style: none;
+  font-size: 16px;
+  line-height: 22px;
+ }
+
+ .description p{
+  font-size: 24px;
+  line-height: 30px;
+ }
+
+.strawberry{
+  color: var(--basic-extra-dark);
+  background-color: var(--absolute-color);
+  background-image: url("img/strawberry.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+.strawberry__item a{
+color: var(--basic-extra-dark); 
+font-weight: bold;
+font-size: 24px;
+line-height: 30px;
+}
+
+.feedback{
+color:var(--basic-dark);
+font-size: 16px;
+line-height: 22px;
 }
