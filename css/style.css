@@ -38,6 +38,9 @@ img {
 }
 .site-navigation {
   list-style: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-navigation .sub-navigation {
@@ -77,6 +80,8 @@ img {
 
 .features-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .feature-item {
@@ -96,19 +101,48 @@ img {
   color: var(--basic-white);
 }
 
+.raspberry{
+  color:var(--basic-white) ;
+  background-color:var(--absolute-color);
+  background-image:url("../img/raspberry.jpg") ;
+  background-position:0 0 ;
+  background-repeat:repeat;
+  font-size: 16px;
+  line-height: 22px;
+  background-position: 50% 50%;
+  background-size: cover;
+
+}
+.chocolate{
+  color:var(--basic-white) ;
+  background-color:var(--absolute-color);
+  background-image:url("../img/chocolate.jpg") ;
+  background-position:0 0;
+  background-repeat:repeat;
+  font-size: 16px;
+  line-height: 22px;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
 /* Index description */
 .description{
   color: var(--basic-extra-dark);
   background-color: var(--absolute-color);
-  background-image: url("img/pattern.png");
+  background-image: url("../img/pattern.jpg");
   background-position: center, 0 0;
-  background-repeat: no-repeat, repeat;
+  background-repeat:repeat;
+  font-size: 16px;
+  line-height: 22px;
+  background-position: 50% 50%;
+  background-size: cover;
+
  }
  .description-features{
   list-style: none;
-  font-size: 16px;
-  line-height: 22px;
- }
+  padding: 0;
+  margin: 0;
+  }
 
  .description p{
   font-size: 24px;
@@ -118,9 +152,13 @@ img {
 .strawberry{
   color: var(--basic-extra-dark);
   background-color: var(--absolute-color);
-  background-image: url("img/strawberry.jpg");
-  background-position: center, 0 0;
-  background-repeat: no-repeat, repeat;
+  background-image: url("../img/strawberry.jpg");
+  background-position:0 0;
+  background-repeat:repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  font-size: 16px;
+  line-height: 22px;
 }
 .strawberry__item a{
 color: var(--basic-extra-dark); 
@@ -131,6 +169,39 @@ line-height: 30px;
 
 .feedback{
 color:var(--basic-dark);
+background-color: var(--absolute-color);
+background-image: url("../img/base.jpg");
+background-position:0 0;
+background-repeat:repeat;
+background-position: 50% 50%;
+background-size: cover;
 font-size: 16px;
 line-height: 22px;
+}
+.social-network{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.information{
+  color: var(--basic-white);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.information a{
+  color: var(--basic-white);
+  font-size: 13px;
+  line-height: 18px;
+}
+.information__item a{
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+}
+.developed a{
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-white);
 }
