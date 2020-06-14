@@ -36,7 +36,6 @@ img {
 }
 .site-navigation {
   list-style: none;
-  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -314,10 +313,80 @@ img {
 .feedback__tel:active {
   color: var(--a-color-active-extra);
 }
-.span {
+.unit {
   font-weight: bold;
   font-size: 30px;
   line-height: 35px;
   color:var(--basic-white);
 }
-/*--CATALOG--/*
+.map {
+  background-image:url("../img/substrate.jpg");
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color:var(--basic-extra-dark);
+}
+/*--CATALOG--*/
+.bread_crumbs a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color:var(--basic-white);
+}
+.bread_crumbs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.bread_crumbs_1:focus,
+.bread_crumbs_1:hover,
+.bread_crumbs_1:active {
+  background-color:var(--absolute-color-a);
+  text-decoration: none;
+  color:var(--basic-white)
+}
+.bread_crumbs_2:focus,
+.bread_crumbs_2:hover,
+.bread_crumbs_2:active {
+  background-color:var(--absolute-color-a);
+  text-decoration: none;
+  color:var(--basic-white)
+}
+.bread_crumbs_3 {
+  text-decoration: none;
+  color:var(--basic-white)
+}
+.cream_ice_cream {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  color:var(--basic-white)
+}
+.sort {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color:var(--basic-white);
+  background-color:var(--absolute-color);
+}
+.sort__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color:var(--basic-white);
+  background-color:var(--absolute-color);
+}
+.pages a {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color:var(--basic-white);
+  text-decoration: none;
+}
+.pages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
