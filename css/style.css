@@ -303,10 +303,7 @@ img {
   line-height: 18px;
   font-weight: bold;
   background-color: var(--basic-white);
-  background-image: ;
-  border: none;
   border-radius: 20px;
-  box-shadow:;
   color:#323232;
   outline: none;
   display: block;
@@ -319,13 +316,12 @@ img {
   font-weight: bold;
   box-shadow: inset 0px 2px 1px #696969;
   background-color: var(--basic-white);
-  background-image: ;
   border: none;
   border-radius: 20px;
   color: var(--basic-white);
   outline: none;
   display: block;
-  padding: 10px;
+  padding: 12px;
   color:#323232;
 }
 .btn_sort {
@@ -334,10 +330,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   outline: none;
-  box-sizing: border-box;
   border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2) ;
-  background-image: rgba(255, 255, 255, 0.2);
   border: 2px solid #FFFFFF;
   text-decoration: none;
   display: block;
@@ -444,6 +438,11 @@ img {
   line-height: 18px;
   color:var(--basic-white);
   background-color:var(--absolute-color);
+}
+.sort__item {
+  list-style: none;
+  margin:0;
+  padding: 0;
 }
 .pages a {
   font-style: normal;
