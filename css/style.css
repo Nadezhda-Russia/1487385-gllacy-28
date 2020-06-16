@@ -26,6 +26,28 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Container */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+  padding: 30px;
+}
+.main-header .container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .user-navigation-1 {
+  display: flex;
+  align-items: center;
+}
+.container .user-navigation-2 {
+  text-align: right;
+  flex-basis: 100%;
+}
 /* Grid */
 .page {
   height: 100%;
@@ -40,35 +62,29 @@ img {
   outline: 5px solid rgba(0, 255, 0, 0.438);
   outline-offset: -5px;
 }
+.main {
+  outline: 5px solid rgba(0, 255, 0, 0.438);
+  outline-offset: -5px;
+}
+.footer {
+  outline: 5px solid rgba(0, 255, 0, 0.438);
+  outline-offset: -5px;
+}
 .user-navigation-1 {
   outline: 5px solid rgba(255, 0, 255, 0.3);
   outline-offset: -5px;
+  align-items: center;
+  padding-top: 9px;
+  padding-left: 13px;
+  padding-bottom: 11px;
+  padding-right: 13px;
+  margin-left: auto;
 }
 .user-navigation-2 {
   order: 2;
   outline: 5px solid rgba(4, 0, 255, 0.561);
   outline-offset: -5px;
 }
-.main-navigation-wrapper {
-  height: 114px;
-  outline: 5px solid rgba(255, 187, 0, 0.623);
-  outline-offset: -5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-/* Container */
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-.main-navigation-wrapper .container {
-  display: flex;
-  justify-content: space-between;
-}
-
 /* Logo */
 .main-header-logo {
   width: 154px;
@@ -82,11 +98,15 @@ img {
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--absolute-color);
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 .site-navigation {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 .site-navigation .sub-navigation {
   background-color: #fcf8e3;
@@ -97,6 +117,10 @@ img {
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--absolute-color);
+  padding-top: 9px;
+  padding-left: 13px;
+  padding-bottom: 11px;
+  padding-right: 13px;
 }
 .site-navigation-current a:not([href]) {
   background-color: var(--absolute-color);
