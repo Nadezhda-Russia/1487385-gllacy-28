@@ -35,8 +35,6 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
   padding: 30px;
 }
 .main-header .container {
@@ -69,21 +67,7 @@ img {
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.438);
-  outline-offset: -5px;
-}
-.main {
-  outline: 5px solid rgba(0, 255, 0, 0.438);
-  outline-offset: -5px;
-}
-.footer {
-  outline: 5px solid rgba(0, 255, 0, 0.438);
-  outline-offset: -5px;
-}
 .user-navigation-1 {
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
   align-items: center;
   padding-top: 9px;
   padding-left: 13px;
@@ -93,25 +77,11 @@ img {
 }
 .user-navigation-2 {
   order: 2;
-  outline: 5px solid rgba(4, 0, 255, 0.561);
-  outline-offset: -5px;
 }
 .slider-list {
-  outline: 5px solid rgba(251, 255, 0, 0.808);
-  outline-offset: -5px;
   grid-column: 1 / -1;
 }
-.raspberry {
-  outline: 5px solid rgba(0, 247, 255, 0.924);
-  outline-offset: -5px;
-}
-.chocolate {
-  outline: 5px solid rgba(225, 0, 255, 0.863);
-  outline-offset: -5px;
-}
 .hits {
-  outline: 5px solid rgba(255, 0, 98, 0.863);
-  outline-offset: -5px;
   grid-column: 1 / -1;
   margin-left:-27px;
   margin-right:-27px;
@@ -130,26 +100,10 @@ img {
   width: 274px;
   width: calc(267px + 20px);
 }
-.hits-list li {
-  outline: 5px solid rgba(251, 255, 0, 0.808);
-  outline-offset: -5px;
-}
 .description {
-  outline: 5px solid rgba(255, 251, 0, 0.959);
-  outline-offset: -5px;
   grid-column: 1 / -1;
 }
-.strawberry {
-  outline: 5px solid rgba(0, 255, 106, 0.979);
-  outline-offset: -5px;
-}
-.feedback {
-  outline: 5px solid rgba(255, 30, 0, 0.979);
-  outline-offset: -5px;
-}
 .map {
-  outline: 5px solid rgba(0, 140, 255, 0.979);
-  outline-offset: -5px;
   grid-column: 1 / -1;
 }
 /* подвал */
@@ -158,13 +112,7 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.social {
-  outline: 5px solid rgba(225, 0, 255, 0.863);
-  outline-offset: -5px;
-}
 .post {
-  outline: 5px solid rgba(251, 255, 0, 0.808);
-  outline-offset: -5px;
   width:327px;
 }
 .information {
@@ -194,13 +142,7 @@ img {
   text-decoration: none;
 }
 .filter {
-  outline: 5px solid rgba(251, 255, 0, 0.808);
-  outline-offset: -5px;
   flex-direction: column;
-}
-.cream_ice_cream {
-  outline: 5px solid rgba(255, 30, 0, 0.979);
-  outline-offset: -5px;
 }
 .cream_ice_cream {
   display: flex;
@@ -247,8 +189,6 @@ img {
 .main-header-logo {
   width: 154px;
   height: 64px;
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 /* Main navigation */
 .main-navigation {
@@ -256,8 +196,6 @@ img {
   line-height: 18px;
   color: var(--basic-white);
   background-color: var(--absolute-color);
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 .site-navigation {
   list-style: none;
