@@ -142,7 +142,7 @@
         </div>
       </div>  
       <div class="user-navigation-2">
-        <h2>режим работы</h2>
+        <h2 class="vissualy-hidden">режим работы</h2>
         <p>с 10 до 20 ежедневно</p>
         <a class="telefone" href="tel:88124502525">8 812 450-25-25</a>
       </div>  
@@ -159,8 +159,8 @@
       <section class="filter">
         <h2 class="vissualy-hidden" >Фильтр каталога</h2>
         <form action="https://echo.htmlacademy.ru/courses" method="GET">
-          <fieldset>
-            <label for="sort" class="sort">Сортировка</label>
+          <fieldset class="sort-fieldset">
+            <legend for="sort" class="sort">Сортировка</legend>
             <select name="sort" id="sort" class="sort__item">
               <option selected>по популярности</option>
               <option>сначала недорогие</option>
@@ -168,11 +168,11 @@
               <option>по жирности</option>
             </select>
           </fieldset>
-          <fieldset>
-            <label for="price" class="sort">Цена: 100 ₽ – 500 ₽</label>
+          <fieldset class="price-fieldset">
+            <legend for="price" class="sort">Цена: 100 ₽ – 500 ₽</legend>
             <input class="sort__item" type="range" id="price" name="price" min="100" max="500" step="5">
           </fieldset>
-          <fieldset>
+          <fieldset class="fat-fieldset">
             <legend class="sort">Жирность</legend>
                 <ul class="sort__item">
                   <li>
@@ -193,7 +193,7 @@
                   </li>
                 </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="checkbox-fieldset">
             <legend class="sort">Наполнители:</legend>
             <ul class="sort__item">
               <li>
