@@ -176,6 +176,45 @@ img {
   outline: 5px solid rgba(255, 0, 98, 0.863);
   outline-offset: -5px;
 }
+.numerology {
+  display: flex;
+  flex-wrap: wrap;
+}
+.numerology li {
+  min-width:194px;
+}
+.numerology {
+outline: 5px solid rgba(4, 0, 255, 0.787);
+  outline-offset: -5px;
+}
+.filter {
+  outline: 5px solid rgba(251, 255, 0, 0.808);
+  outline-offset: -5px;
+  flex-direction: column;
+}
+.bread_crumbs {
+  outline: 5px solid rgba(225, 0, 255, 0.863);
+  outline-offset: -5px;
+  flex-direction: column;
+}
+.cream_ice_cream {
+  outline: 5px solid rgba(255, 30, 0, 0.979);
+  outline-offset: -5px;
+}
+.cream_ice_cream {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bread_crumbs {
+  display: flex;
+  flex-direction: column;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Logo */
 .main-header-logo {
   width: 154px;
