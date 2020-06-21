@@ -35,8 +35,8 @@ img {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
-  padding: 30px;
+  padding: 0 27px;
+  box-sizing: border-box;
 }
 .main-header .container {
   display: flex;
@@ -84,28 +84,27 @@ img {
 }
 .hits {
   grid-column: 1 / -1;
-  margin-left:-27px;
-  margin-right:-27px;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
 }
 .hits-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,267px);
+  grid-column-gap:26px;
 }
 .hits-list li {
-  padding-top: 6px;
-  padding-left: 13px;
-  padding-bottom: 76px;
-  padding-right: 13px;
-  width: 274px;
-  width: calc(267px + 20px);
+  width: 267px;
+  box-sizing: border-box;
 }
 .description {
   grid-column: 1 / -1;
 }
 .map {
   grid-column: 1 / -1;
+  background-color: transparent;
+}
+.map img  {
+ margin: 0 auto;
+ display: block;
 }
 /* подвал */
 .footer .container {
@@ -541,9 +540,6 @@ img {
   font-size: 30px;
   line-height: 35px;
   color:var(--basic-white);
-}
-.map {
-  background-color:var(--basic-white);
 }
 .address {
   font-style: normal;
