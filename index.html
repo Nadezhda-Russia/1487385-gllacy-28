@@ -150,22 +150,22 @@
   </header>
   <main class="main index">
   <div class="container">
-    <h1>Магазин Глейси</h1>
+    <h1 class="vissualy-hidden">Магазин Глейси</h1>
     <ul class="slider-list">
       <li class="slider-item">
-        <h2 class="vissualy-hidden">Крем-брюле и пломбир с малиновым джемом</h2>
+        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
         <img src="img/group1.png" width="647" height="584" alt="два мороженных в рожке">
         <img src="img/illumination.png" width="716" height="716" alt="подсветка">
         <a class="btn" href="#">Давайте оба!</a>
       </li>
       <li class="slider-item">
-        <h2 class="vissualy-hidden">Шоколадный пломбир и лимонный сорбе </h2>
+        <h2>Шоколадный пломбир и лимонный сорбе </h2>
         <img src="img/group2.png" width="647" height="584" alt="два мороженных в рожке">
         <img src="img/illumination.png" width="716" height="716" alt="подсветка">
         <a class="btn" href="#">Давайте оба!</a>
       </li>
       <li class="slider-item">
-        <h2 class="vissualy-hidden">Пломбир с помадкой и клубничный щербет</h2>
+        <h2>Пломбир с помадкой и клубничный щербет</h2>
         <img src="img/group3.png" width="647" height="584" alt="два мороженных в рожке">
         <img src="img/illumination.png" width="716" height="716" alt="подсветка">
         <a class="btn" href="#">Давайте оба!</a>
@@ -234,10 +234,10 @@
         <p>Доставка нашего мороженного до заказчиков осуществляется в специальном термопаке, который не дает
           мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
     </article>
-    <div class="strawberry">
+    <section class="strawberry">
       <h2>Новое в нашем блоге</h2>
       <a class="strawberry__item" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-    </div>
+    </section>
     <section class="feedback">
       <h2>Обратная связь</h2>
       <p>
@@ -252,19 +252,21 @@
     </section>
   </div>
   <section class="map">
-    <div>
-      <h2>Контакты</h2>
-      <p><span class="address">Адрес главного офиса
+   <div class="map-contacts-wrapper"> 
+    <div class="map-contacts">
+      <h2 class="vissualy-hidden">Контакты</h2>
+      <p><span class="address">Адрес главного офиса<br>
         и офлайн-магазина:</span>
         <span class="feedback__tel">ул. Большая Конюшенная,
           19/8, Санкт-Петербург</span>
       </p>
-      <p><span class="address">Для заказов по телефону:</span>
-        <a class="feedback__tel" href="tel:88124502525">8 812 450-25-25</a>
+      <p><span class="address">Для заказов по телефону:</span><br>
+        <a class="feedback__tel" href="tel:88124502525">8 812 450-25-25</a><br>
         <span class="address" >(с 10 до 20 ежедневно)</span>
       </p>
       <button class="btn" type="submit">Форма обратной связи</button>
-   </div>
+    </div>
+  </div>
    <div>
     <img src="img/map.png" alt="карта" width="1200" height="430">
    </div>

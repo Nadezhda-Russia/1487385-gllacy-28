@@ -101,10 +101,33 @@ img {
 .map {
   grid-column: 1 / -1;
   background-color: transparent;
+  padding-top: 40px;
+}
+.map-contacts {
+  position: absolute;
+  top:62px;
+  right: 27px;
+  background-color: var(--basic-white);
+  width: 303px;
+  padding-top: 32px;
+  padding-right:25px ;
+  padding-left: 25px;
+  padding-bottom: 31px;
+  border-radius: 16px;
+
 }
 .map img  {
  margin: 0 auto;
  display: block;
+}
+.address {
+  padding-bottom: 31px;
+}
+.map-contacts-wrapper {
+  position: relative;
+  width: 1200px;
+  height: 0;
+  margin: 0 auto;
 }
 /* подвал */
 .footer .container {
@@ -155,7 +178,7 @@ img {
 }
 .bread_crumbs {
   display: flex;
-  margin-top:-90px;
+  margin-top:-60px;
   list-style: none;
   padding: 0;
 }
