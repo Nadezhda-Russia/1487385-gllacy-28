@@ -27,6 +27,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+*, ::after, ::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /* удалить !!!! */
 .slider-item:nth-child(n +2 ) {
   display:none;
@@ -225,14 +229,16 @@ img {
   display: flex;
   align-items: center;
 }
-.site-navigation .sub-navigation {
+.site-navigation__item .sub-navigation {
+  padding: 0;
+  margin: 0;
+  padding-top: 5px;
+  margin-left:-6px;
   position: absolute;
   left: -5px;
-  display: none;
   flex-direction: column;
   list-style: none;
-  padding: 0;
-  margin-top: 5px;
+  display: none;
 }
 .site-navigation__item {
   position: relative;
@@ -283,24 +289,14 @@ img {
 .site-navigation__item:hover .sub-navigation {
   display: flex;
 }
-.sub-navigation {
-  display: flex;
-  position: absolute;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-direction: column;
-  padding-top: 5px;
-  margin-left:-6px;
-}
 .sub-navigation-item {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-extra-dark);
   background-color: var(--basic-white);
   min-width: 143px;
-  padding-left: 9px;
-  padding-right: 6px;
+  padding-left: 15px;
+  padding-right: 11px;
 }
 .sub-navigation-item:first-child {
   border-radius: 4px 4px 0 0;
