@@ -242,6 +242,7 @@ img {
   display: none;
   border-radius: 4px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  padding-bottom: 7px;
 }
 .site-navigation__item {
   position: relative;
@@ -324,7 +325,10 @@ img {
  .sub-navigation-item:active {
   background-color: #F6B5A5;
 }
-.sub-navigation-activ {
+.sub-navigation-activ,
+.sub-navigation-activ:hover,
+.sub-navigation-activ:focus, 
+.sub-navigation-activ:active {
   background-color: #D07058;
 }
 .sub-navigation-activ > a {
