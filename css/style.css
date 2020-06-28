@@ -348,19 +348,15 @@ img {
 }
 .user-navigation .icon {
   fill: #ffffff;
-}
-.user-navigation .icon:hover,
-.user-navigation .icon:focus {
-  background-color:var(--basic-white);
-  fill: black;
+
 }
 .user-navigation-item:hover .user-navigation,
 .user-navigation-item:focus .user-navigation {
   background-color:var(--basic-white);
   color: var(--absolute-black); 
 }
-.user-navigation-item .icon,
-.user-navigation-item .icon {
+.user-navigation-item:hover .icon,
+.user-navigation-item:focus .icon {
   fill: var(--absolute-black);
 }
 .search-form {
