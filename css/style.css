@@ -79,6 +79,7 @@ img {
   padding-bottom: 11px;
   padding-right: 13px;
   margin-left: auto;
+  display: flex;
 }
 .user-navigation-2 {
   order: 2;
@@ -338,6 +339,13 @@ img {
   color: var(--basic-white);
   display: block;
   padding: 10px;
+  background-color:rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  position: relative;
+}
+.user-navigation .icon {
+  position: absolute;
+  fill: #ffffff;
 }
 .user-navigation:hover,
 .user-navigation:focus {
