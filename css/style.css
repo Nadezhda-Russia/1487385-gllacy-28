@@ -656,16 +656,17 @@ img {
   font-size: 35px;
   line-height: 41px;
 }
-.raspberry p {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-}
+.raspberry p,
 .chocolate p {
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
-} 
+  margin-bottom: 42px;
+}
+.raspberry .btn,
+.chocolate .btn {
+  margin-left: auto;
+}
 /* Index description */
 .description {
   color: var(--basic-extra-dark);
@@ -675,6 +676,9 @@ img {
   background-repeat:repeat;
   background-position: 50% 50%;
   background-size: cover;
+  padding-top:24px;
+  padding-left:23px;
+  padding-right: 20px;
  }
  .description h2 {
   font-size: 24px;
@@ -694,12 +698,25 @@ img {
   background-size: cover;
   font-size: 16px;
   line-height: 22px;
+  padding-left:20px;
+  padding-top: 23px;
+  margin: 0;
+  border-radius: 16px;
+}
+.strawberry h2 {
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+margin: 0;
+padding-bottom:15px;
 }
 .strawberry__item {
   color: var(--basic-extra-dark); 
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  max-width: 300px;
+  display: inline-block;
 }
 .strawberry__item:focus,
 .strawberry__item:hover,
@@ -708,6 +725,35 @@ img {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+}
+.description-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.description-item {
+  margin: 0;
+  padding: 0;
+  flex-basis: 50%;
+  padding-right:26px;
+  padding-bottom: 30px;
+  padding-left: 55px;
+  position: relative;
+}
+.description-item::before {
+  content: "";
+  position: absolute;
+  width: 49px;
+  height: 49px;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.ice-cream::before {
+  background-image: url("../img/ice-cream.svg");
 }
 .feedback {
   color:var(--basic-dark);
