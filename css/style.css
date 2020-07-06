@@ -755,6 +755,15 @@ padding-bottom:15px;
 .ice-cream::before {
   background-image: url("../img/ice-cream.svg");
 }
+.cow::before {
+  background-image: url("../img/cow.svg");
+}
+.eco::before {
+  background-image: url("../img/eco.svg");
+}
+.thermometer::before {
+  background-image: url("../img/thermometer.svg");
+}
 .feedback {
   color:var(--basic-dark);
   background-color: var(--absolute-color);
