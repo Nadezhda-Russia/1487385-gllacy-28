@@ -15,7 +15,7 @@ body {
   min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: “Roboto”, Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   font-size:16px;
   line-height:22px;
   color: var(--basic-white);
@@ -257,16 +257,9 @@ img {
 }
 .hits {
   grid-column: 1 / -1;
-  width: 100%;
-}
-.hits-list {
-  display: grid;
-  grid-template-columns: repeat(4,267px);
-  grid-column-gap:26px;
-}
-.hits-list li {
-  width: 267px;
-  box-sizing: border-box;
+  width: 1200px;
+  padding: 0 14px;
+  margin: 0 auto;
 }
 .description {
   grid-column: 1 / -1;
@@ -274,7 +267,6 @@ img {
 .map {
   grid-column: 1 / -1;
   background-color: transparent;
-  padding-top: 40px;
 }
 .map-contacts {
   position: absolute;
@@ -287,7 +279,6 @@ img {
   padding-left: 25px;
   padding-bottom: 31px;
   border-radius: 16px;
-
 }
 .map img  {
  margin: 0 auto;
@@ -673,12 +664,14 @@ img {
   background-color: var(--absolute-color);
   background-image: url("../img/pattern.jpg");
   background-position: center, 0 0;
-  background-repeat:repeat;
+  background-repeat: repeat;
   background-position: 50% 50%;
   background-size: cover;
-  padding-top:24px;
-  padding-left:23px;
+  padding-top: 24px;
+  padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+  box-sizing: border-box;
  }
  .description h2 {
   font-size: 24px;
@@ -767,15 +760,31 @@ padding-bottom:15px;
 .feedback {
   color:var(--basic-dark);
   background-color: var(--absolute-color);
-  background-image: url("../img/base.jpg");
-  background-position:0 0;
+  background-image: url("../img/bg-post.svg");
   background-repeat:repeat;
   background-position: 50% 50%;
   background-size: cover;
   font-size: 16px;
   line-height: 22px;
-  display: block;
-  padding:10px;
+  display: flex;
+  border-radius: 16px;
+  padding: 5px 6px 5px 6px;
+}
+.feedback-item {
+  background-color: #F8F7F4;
+  padding: 29px 16px 35px 20px;
+}
+.feedback-item p {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 47px;
+}
+.feedback-form {
+  display: flex;
+}
+.feedback-form .form-input {
+ margin-right: 10px;
+ flex-grow: 2;
 }
 .social-network {
   list-style: none;
@@ -970,6 +979,7 @@ padding-bottom:15px;
   font-size: 16px;
   line-height: 22px;
   color:var(--basic-white);
+  text-align: center;
 }
 .hits-item:hover,
 .hits-item:focus,
@@ -984,18 +994,59 @@ padding-bottom:15px;
   font-size: 45px;
   line-height: 45px;
   color: var(--basic-white);
+  text-align: left;
 }
 .hits-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4,293px);
+  }
+.hits-list li {
+  width: 293px;
+  box-sizing: border-box;
+  padding-left: 13px;
+  padding-right: 13px;
+  text-align: center;
 }
 .hits-list img {
   border-radius: 50%;
   padding: 0; 
   margin: 0;
 }
-.feedback__tel{
+.hits-list-item {
+  position: relative;
+}
+.hits-list-item:hover::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: -70px;
+  width: 100%;
+  background: #FFFFFF;
+  opacity: 0.2;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.hits-list-item .btn {
+display: none;
+position: absolute;
+bottom: -60px;
+width: 200px;
+box-sizing: border-box;
+left: 50%;
+margin-left: calc(-200px/2);
+padding: 12px 16px;
+}
+.hits-list-item:hover .btn {
+  display: inline-block;
+}
+.hits-list-item .price {
+  margin-top: -70px;
+}
+.feedback__tel {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
