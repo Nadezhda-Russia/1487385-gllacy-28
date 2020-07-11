@@ -350,7 +350,7 @@ img {
 }
 .bread_crumbs {
   display: flex;
-  margin-top:-60px;
+  margin-top:-25px;
   list-style: none;
   padding: 0;
 }
@@ -364,16 +364,9 @@ img {
   font-size: 14px;
   line-height: 16px;
   color:var(--basic-white);
-  padding-right: 8px;
+  margin-right: 8px;
 }
-.bread_crumbs_1:focus,
-.bread_crumbs_1:hover,
-.bread_crumbs_1:active {
-  background-color:var(--absolute-color-a);
-  text-decoration: none;
-  color:var(--basic-white)
-}
-.bread_crumbs_2 {
+.bread_crumbs {
   text-decoration: none;
   color:var(--basic-white)
 }
@@ -468,7 +461,7 @@ img {
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-extra-dark);
-  min-width: 143px;
+  min-width: 158px;
   padding-left: 9px;
   padding-right: 6px;
 }
@@ -934,10 +927,10 @@ padding-bottom:15px;
   border-radius: 4px;
   display: none;
 }
-.user-navigation-activ .user-navigation,
+.user-navigation-activ:active .user-navigation,
 .user-navigation-activ:hover .user-navigation,
 .user-navigation-activ:focus .user-navigation {
-  background-color:var(--basic-white);
+  background-color: var(--basic-white);
   color: var(--absolute-black);
 }
 .user-navigation-item:hover .basket {
